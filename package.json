@@ -1,0 +1,24 @@
+{
+  "name": "anna-app-tool-starter",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "description": "A minimal Anna App with a Go Tool Executa demonstrating six parameter types.",
+  "scripts": {
+    "dev": "anna-app dev --no-llm",
+    "validate": "anna-app validate --strict",
+    "test": "go -C executas/type-demo test ./...",
+    "check": "node scripts/check.mjs",
+    "build": "go run scripts/build-binary.go",
+    "build:all": "go run scripts/build-binary.go --all",
+    "tool:describe": "anna-app executa dev --dir executas/type-demo --describe --json --no-sampling --no-agent --storage off",
+    "tool:invoke": "anna-app executa dev --dir executas/type-demo --invoke get_types --json --no-sampling --no-agent --storage off"
+  },
+  "devDependencies": {
+    "@anna-ai/cli": "0.1.56"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

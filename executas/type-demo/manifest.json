@@ -1,0 +1,24 @@
+{
+  "name": "type-demo",
+  "display_name": "Anna Type Demo",
+  "version": "0.1.0",
+  "description": "Return one field for each of Anna's six supported parameter types. Omitted arguments use the declared defaults.",
+  "tools": [
+    {
+      "name": "get_types",
+      "description": "Return string, integer, number, boolean, array and object sample values. Optionally override any sample with a value of the declared type.",
+      "parameters": [
+        { "name": "string_value", "type": "string", "description": "A string sample.", "required": false, "default": "Hello, Anna!" },
+        { "name": "integer_value", "type": "integer", "description": "An integer sample.", "required": false, "default": 42 },
+        { "name": "number_value", "type": "number", "description": "A number sample.", "required": false, "default": 3.14 },
+        { "name": "boolean_value", "type": "boolean", "description": "A boolean sample.", "required": false, "default": true },
+        { "name": "array_value", "type": "array", "items_type": "string", "description": "An array of strings.", "required": false, "default": ["Anna", "Go", "Executa"] },
+        { "name": "object_value", "type": "object", "description": "A JSON object sample.", "required": false, "default": { "platform": "Anna", "language": "Go" } }
+      ],
+      "timeout": 10
+    }
+  ],
+  "credentials": [],
+  "host_capabilities": [],
+  "runtime": { "type": "binary" }
+}

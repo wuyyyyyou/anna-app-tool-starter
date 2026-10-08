@@ -1,0 +1,22 @@
+{
+  "slug": "type-demo",
+  "name": "Anna Type Demo",
+  "version": "0.1.0",
+  "executa_type": "tool",
+  "description": "Return one field for each of Anna's six supported parameter types. Omitted arguments use the declared defaults.",
+  "tool_id": "tool-dev-type-demo",
+  "type": "go",
+  "command": ["go", "run", "."],
+  "distribution": {
+    "type": "binary",
+    "executable_name": "type-demo",
+    "supports_protocol": true,
+    "binary_artifacts": {
+      "darwin-arm64": { "path": "dist/type-demo-v{version}-darwin-arm64.tar.gz", "entrypoint": "bin/type-demo", "format": "tar.gz" },
+      "darwin-x86_64": { "path": "dist/type-demo-v{version}-darwin-x86_64.tar.gz", "entrypoint": "bin/type-demo", "format": "tar.gz" },
+      "linux-x86_64": { "path": "dist/type-demo-v{version}-linux-x86_64.tar.gz", "entrypoint": "bin/type-demo", "format": "tar.gz" },
+      "linux-aarch64": { "path": "dist/type-demo-v{version}-linux-aarch64.tar.gz", "entrypoint": "bin/type-demo", "format": "tar.gz" },
+      "windows-x86_64": { "path": "dist/type-demo-v{version}-windows-x86_64.zip", "entrypoint": "bin/type-demo.exe", "format": "zip" }
+    }
+  }
+}

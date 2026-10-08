@@ -1,0 +1,14 @@
+{
+  "name": "Anna Type Demo",
+  "slug": "anna-type-demo",
+  "version": "0.1.0",
+  "tagline": "One button, six types, one Go tool.",
+  "description": "A minimal Anna App demonstrating a Go Tool Executa, typed parameters, stdio JSON-RPC and binary distribution.",
+  "category": "productivity",
+  "pricing_model": "free",
+  "bundled_executas": {
+    "type-demo": {
+      "path": "executas/type-demo"
+    }
+  }
+}

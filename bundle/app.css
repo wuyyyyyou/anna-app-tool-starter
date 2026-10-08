@@ -1,0 +1,38 @@
+:root {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #20242c;
+  background: #f6f7f9;
+  line-height: 1.5;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 680px; margin: 0 auto; padding: 28px 20px; }
+h1 { margin: 0; font-size: 24px; }
+p { color: #596273; }
+button {
+  border: 0;
+  border-radius: 8px;
+  background: #3454d1;
+  color: white;
+  padding: 11px 18px;
+  font: inherit;
+  cursor: pointer;
+}
+button:disabled { opacity: 0.55; cursor: default; }
+button:focus-visible, summary:focus-visible { outline: 3px solid #9aaaff; outline-offset: 3px; }
+#status { min-height: 24px; font-size: 14px; overflow-wrap: anywhere; }
+#status.error { color: #b42318; }
+table { width: 100%; border-collapse: collapse; background: white; table-layout: fixed; }
+th, td { padding: 12px 14px; border: 1px solid #e1e5ed; text-align: left; vertical-align: top; }
+th { width: 100px; font-size: 14px; font-weight: 600; }
+thead { background: #edf0f8; }
+pre { margin: 0; font-size: 13px; white-space: pre-wrap; overflow-wrap: anywhere; }
+details { margin-top: 20px; }
+summary { cursor: pointer; font-size: 14px; }
+details pre { margin-top: 12px; padding: 14px; background: white; border: 1px solid #e1e5ed; }
+
+@media (max-width: 400px) {
+  main { padding: 20px 12px; }
+  th, td { padding: 10px; }
+}

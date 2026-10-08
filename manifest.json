@@ -1,0 +1,26 @@
+{
+  "schema": 2,
+  "required_executas": [
+    { "tool_id": "bundled:type-demo", "min_version": "0.1.0", "version": "latest" }
+  ],
+  "ui": {
+    "bundle": {
+      "format": "static-spa",
+      "entry": "index.html",
+      "external_origins": []
+    },
+    "views": [
+      {
+        "name": "main",
+        "title": "Anna Type Demo",
+        "default": true,
+        "min_size": { "w": 320, "h": 360 },
+        "default_size": { "w": 640, "h": 680 },
+        "single_instance": true
+      }
+    ],
+    "host_api": {
+      "tools": ["required:bundled:type-demo"]
+    }
+  }
+}

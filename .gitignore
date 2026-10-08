@@ -1,0 +1,20 @@
+# Local machine files
+.DS_Store
+
+# Dependencies and build outputs
+node_modules/
+dist/
+coverage/
+.tmp/
+executas/*/bin/
+
+# Anna identity caches and generated runtime mappings
+.anna/
+anna-tool-ids.js
+
+# Local environment configuration
+.env
+.env.*
+!.env.example
+
+docs/

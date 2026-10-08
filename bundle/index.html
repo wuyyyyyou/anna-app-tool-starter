@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anna Type Demo</title>
+    <link rel="stylesheet" href="./app.css" />
+    <script src="./anna-tool-ids.js"></script>
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Anna Type Demo</h1>
+      <p>Click the button to see six data types returned by the Go backend.</p>
+      <button id="run" type="button" disabled>Get backend data</button>
+      <p id="status" role="status" aria-live="polite">Connecting to Anna…</p>
+      <table aria-label="Data types and values returned by the backend">
+        <thead><tr><th scope="col">Type</th><th scope="col">Returned value</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">string</th><td><pre id="string_value">—</pre></td></tr>
+          <tr><th scope="row">integer</th><td><pre id="integer_value">—</pre></td></tr>
+          <tr><th scope="row">number</th><td><pre id="number_value">—</pre></td></tr>
+          <tr><th scope="row">boolean</th><td><pre id="boolean_value">—</pre></td></tr>
+          <tr><th scope="row">array</th><td><pre id="array_value">—</pre></td></tr>
+          <tr><th scope="row">object</th><td><pre id="object_value">—</pre></td></tr>
+        </tbody>
+      </table>
+      <details>
+        <summary>View returned JSON</summary>
+        <pre id="json">Click the button to load data.</pre>
+      </details>
+    </main>
+  </body>
+</html>
